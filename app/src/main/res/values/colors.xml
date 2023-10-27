@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryVariant">#4CAF50</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="colorSecondary">#AF4CAB</color>
+    <color name="colorSecondaryVariant">#AF4CAB</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
 </resources>
