@@ -10,7 +10,8 @@
         <item name="colorSecondary">#AF4CAB</item>
         <item name="colorSecondaryVariant">#AF4CAB</item>
         <item name="colorOnSecondary">#FFFFFF</item>
-
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="Theme.SimpleTextSaver" parent="Base.Theme.SimpleTextSaver" />
