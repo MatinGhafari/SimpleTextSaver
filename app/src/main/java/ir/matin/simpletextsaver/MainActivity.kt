@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.PersistableBundle
 import android.view.WindowManager
+import ir.matin.simpletextsaver.databinding.ActivityMain3Binding
 
 
 @Suppress("DEPRECATION")
@@ -18,11 +20,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed({
-            val intent=Intent(this@MainActivity , MainActivity2::class.java)
+            val intent = Intent(this@MainActivity, MainActivity3::class.java)
             startActivity(intent)
             finish()
 
 
-        },2000)
+        }, 2000)
+
+
     }
-}
+
+
+
+
+    }
