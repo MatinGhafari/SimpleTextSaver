@@ -12,7 +12,7 @@ import ir.matin.simpletextsaver.databinding.FragmentProfileBinding
 import ir.matin.simpletextsaver.databinding.FragmentRegisterBinding
 
 
-class profile : Fragment() {
+class profile() : Fragment() {
     companion object {
         const val SHARED_PREFS = "shared_prefs"
         const val USER_NAME = "username_key"
@@ -37,18 +37,22 @@ lateinit var binding: FragmentProfileBinding
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle? ) {
         super.onViewCreated(view, savedInstanceState)
-
 
          sharedpreferences = this.requireActivity()
             .getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE)
 
-        username = sharedpreferences.getString(USER_NAME, null)
+        username = sharedpreferences.getString(USERNAME_KEY, null)
         password = sharedpreferences.getString(PASSWORD_KEY, null)
-
 
     binding.txtUserName.text = username
         binding.txtPassword.text =password
+
+
+
     }
+
+
+
     }
